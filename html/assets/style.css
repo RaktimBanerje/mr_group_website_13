@@ -162,6 +162,66 @@ a {
 }
 
 
+/* Inner Banner */
+.inner_banner {
+    background-image: url('images/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner_banner .row {
+    margin-top: 100px;
+}
+
+.inner_banner .container {
+    height: 300px;
+}
+
+.inner_banner .inner_banner-title {
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.inner_banner .inner_banner-text {
+    font-size: 1.40rem;
+    line-height: 30px;
+}
+
+.inner_banner p {
+    color: black;
+}
+
+@media (max-width:480px) {
+    .inner_banner .inner_banner-title {
+        font-weight: bold;
+        color: rgb(49, 49, 49);
+        font-size: 35px;
+    }
+
+    .inner_banner .inner_banner-text {
+        font-size: 1.20rem;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .inner_banner .row {
+        margin-top: 0px;
+    }
+    
+    .inner_banner .container {
+        height: fit-content;
+    }
+
+    .inner_banner .container .row {
+        padding: 40px 0px ;
+    }
+}
+
+
+
 /* Notice */
 .notice {
     background: linear-gradient(118.04deg, #230023 0%, #1D5CA9 90.35%);
@@ -751,3 +811,25 @@ footer a:hover {
         font-size: 30px;
     }
 }
+
+.cta {
+    background-image: url('images/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+#overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background-color: rgb(0 0 99 / 75%);
+    cursor: pointer; /* Add a pointer on hover */
+  }
